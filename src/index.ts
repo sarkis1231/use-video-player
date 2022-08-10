@@ -1,4 +1,4 @@
-import {RefObject, useEffect, useState} from 'react';
+import {ChangeEvent, RefObject, useEffect, useState} from 'react';
 
 type TState = {
     isPlaying: boolean,
@@ -7,7 +7,16 @@ type TState = {
     isMuted: boolean
 }
 
-export const useVideoPlayer = (videoElement: RefObject<HTMLVideoElement>) => {
+type TReturn = {
+    playerState: TState;
+    togglePlay: () => void;
+    handleOnTimeUpdate: () => void;
+    handleVideoProgress: (event: ChangeEvent<any>) => void;
+    handleVideoSpeed: (event: ChangeEvent<any>) => void;
+    toggleMute: () => void;
+}
+
+export const useVideoPlayer = (videoElement: RefObject<HTMLVideoElement>) : TReturn => {
 
     const [playerState, setPlayerState] = useState<TState>(() => ({
         isPlaying: false,
@@ -15,8 +24,6 @@ export const useVideoPlayer = (videoElement: RefObject<HTMLVideoElement>) => {
         speed: 1,
         isMuted: false,
     }));
-
-    // const [isPlaying, setIsPlaying] = useState(false)
 
 
     const togglePlay = () => {
@@ -40,7 +47,7 @@ export const useVideoPlayer = (videoElement: RefObject<HTMLVideoElement>) => {
         }));
     };
 
-    const handleVideoProgress = (event: any) => {
+    const handleVideoProgress = (event: ChangeEvent<any>) => {
         const manualChange = Number(event.target.value);
         if (videoElement?.current) {
             videoElement.current.currentTime = (videoElement?.current?.duration / 100) * manualChange;
@@ -52,7 +59,7 @@ export const useVideoPlayer = (videoElement: RefObject<HTMLVideoElement>) => {
         }));
     };
 
-    const handleVideoSpeed = (event: any) => {
+    const handleVideoSpeed = (event: ChangeEvent<any>) => {
         const speed = Number(event.target.value);
         if (videoElement?.current) {
             videoElement.current.playbackRate = speed;

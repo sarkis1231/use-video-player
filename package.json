@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "description": "custom react hook to hide browser scrollbar",
+  "description": "custom react hook helps to create custom video player",
   "name": "use-video-player",
   "source": "src/index.ts",
   "main": "dist/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarkis1231/use-hide-scrollbar"
+    "url": "git+https://github.com/sarkis1231/use-hide-scrollbar.git"
   },
   "bugs": {
     "url": "https://github.com/sarkis1231/use-hide-scrollbar/issues"
@@ -48,5 +48,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "homepage": "https://github.com/sarkis1231/use-hide-scrollbar#readme"
 }
