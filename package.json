@@ -22,8 +22,8 @@
   "author": "Sarkis1231",
   "license": "MIT",
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react": ">=18.2.0",
+    "react-dom": ">=18.2.0"
   },
   "devDependencies": {
     "@types/jest": "^28.1.6",
