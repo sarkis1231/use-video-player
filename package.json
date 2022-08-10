@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
   "description": "custom react hook helps to create custom video player",
-  "name": "use-video-player",
+  "name": "use-video-player-hook",
   "source": "src/index.ts",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
@@ -49,5 +49,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/sarkis1231/use-hide-scrollbar#readme"
+  "homepage": "https://github.com/sarkis1231/use-video-player#readme"
 }
