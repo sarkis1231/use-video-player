@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sarkis1231/use-hide-scrollbar.git"
+    "url": "git+https://github.com/sarkis1231/use-video-player.git"
   },
   "bugs": {
-    "url": "https://github.com/sarkis1231/use-hide-scrollbar/issues"
+    "url": "https://github.com/sarkis1231/use-video-player/issues"
   },
   "author": "Sarkis1231",
   "license": "MIT",
