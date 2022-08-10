@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "description": "custom react hook to hide browser scrollbar",
+  "name": "use-video-player",
+  "source": "src/index.ts",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "esmodule": "dist/index.modern.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "microbundle watch",
+    "build": "rimraf dist && microbundle build --no-sourcemap --compress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sarkis1231/use-hide-scrollbar"
+  },
+  "bugs": {
+    "url": "https://github.com/sarkis1231/use-hide-scrollbar/issues"
+  },
+  "author": "Sarkis1231",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.6",
+    "@types/react": "^18.0.16",
+    "microbundle": "^0.15.0",
+    "react": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4"
+  },
+  "keywords": [
+    "custom react hook",
+    "hook",
+    "video player",
+    "useVideoPlayer",
+    "react video player",
+    "use-video-player-hook",
+    "React hook video player"
+  ],
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
