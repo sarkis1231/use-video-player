@@ -29,7 +29,7 @@ export const useVideoPlayer = (videoElement: RefObject<HTMLVideoElement>) : TRet
     const togglePlay = () => {
         setPlayerState(({isPlaying, ...prev}) => ({
             ...prev,
-            isPlaying,
+            isPlaying: !isPlaying,
         }));
     };
 
@@ -74,7 +74,7 @@ export const useVideoPlayer = (videoElement: RefObject<HTMLVideoElement>) : TRet
     const toggleMute = () => {
         setPlayerState(({isMuted, ...prev}) => ({
             ...prev,
-            isMuted
+            isMuted: !isMuted
         }));
     };
 
