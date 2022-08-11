@@ -78,6 +78,10 @@ All you need is to pass videoElement ref as a parameter
       toggleMute,
     } = useVideoPlayer(videoElement);
 ```
+
+## Metadata
+package on npm [https://npmjs.com/package/use-video-player-hook](https://npmjs.com/package/use-video-player-hook)
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
