@@ -4,7 +4,7 @@
 ## Install
 
 ```sh
-yarn add use-video-player or npm i use-video-player
+yarn add use-video-player-hook or npm i use-video-player-hook
 ```
 
 ## Usage
