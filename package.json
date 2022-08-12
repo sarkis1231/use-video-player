@@ -49,5 +49,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/sarkis1231/use-video-player#readme"
+  "homepage": "https://github.com/sarkis1231/use-video-player#readme",
+  "dependencies": {
+    "use-video-player-hook": "^1.0.6"
+  }
 }
