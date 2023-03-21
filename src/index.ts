@@ -1,4 +1,4 @@
-import {ChangeEvent, RefObject, useEffect, useState} from 'react';
+import { ChangeEvent, RefObject, useEffect, useState } from 'react';
 
 type TState = {
     isPlaying: boolean,
@@ -18,7 +18,7 @@ type TReturn = {
 
 export const useVideoPlayer = (videoElement: RefObject<HTMLVideoElement>): TReturn => {
 
-    const [isPlaying, setIsPlaying] = useState<boolean>(false);
+    const [isPlaying, setIsPlaying] = useState<boolean>(videoElement?.current?.paused ? false : true);
     const [progress, setProgress] = useState<number>(0);
     const [speed, setSpeed] = useState<number>(1);
     const [isMuted, setIsMuted] = useState<boolean>(false);
